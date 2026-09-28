@@ -1,48 +1,54 @@
 # 📝 Flask Todo App
 
-A simple and modern **Todo Management Web Application** built using **Python Flask, SQLite, SQLAlchemy, HTML, CSS, and JavaScript**.
+A simple and beginner-friendly **Todo Web Application** built using **Python Flask**, **Flask-SQLAlchemy**, and **SQLite**.
 
-This project helped me understand how a frontend form communicates with a Flask backend and how data is stored, updated, retrieved, and deleted from a database.
+The application allows users to create, view, update, and delete their todo tasks.
 
-## 🚀 Features
+## 🚀 Live Demo
 
-* ➕ Create new Todos
-* 📋 View all Todos
-* ✏️ Update existing Todos
-* 🗑️ Delete Todos
-* 💾 SQLite database integration
-* 🧩 SQLAlchemy ORM
-* 🎨 Responsive modern UI
-* 🌙 Dark / Light theme
-* 📱 Mobile-friendly design
+👉 **[Flask Todo App](https://flask-todo-app-you0.onrender.com/)**
 
 ## 🛠️ Tech Stack
 
-* **Frontend:** HTML, CSS, JavaScript, Bootstrap
-* **Backend:** Python, Flask
-* **Database:** SQLite
-* **ORM:** Flask-SQLAlchemy
-* **Template Engine:** Jinja2
+* **Python**
+* **Flask**
+* **Flask-SQLAlchemy**
+* **SQLite**
+* **HTML**
+* **CSS**
+* **Jinja2**
+* **Gunicorn**
+* **Render** – Deployment
+
+## ✨ Features
+
+* ➕ Add new todo
+* 📋 View all todos
+* ✏️ Update existing todos
+* 🗑️ Delete todos
+* 💾 SQLite database integration
+* 🔗 Flask routing
+* 🎨 HTML/CSS frontend
+* ☁️ Deployed on Render
 
 ## 📂 Project Structure
 
 ```text
-Flask/
-│
-├── app.py
-├── requirements.txt
-├── Procfile
-├── .gitignore
-│
-├── templates/
-│   ├── index.html
-│   └── Update.html
+flask-todo-app/
 │
 ├── static/
 │   └── style.css
 │
-└── instance/
-    └── todo.db
+├── templates/
+│   ├── index.html
+│   └── update.html
+│
+├── app.py
+├── todo.db
+├── requirement.txt
+├── Procfile
+├── README.md
+└── .gitignore
 ```
 
 ## ⚙️ Run Locally
@@ -53,7 +59,7 @@ Flask/
 git clone https://github.com/jagat2024/flask-todo-app.git
 ```
 
-### 2. Move into the project directory
+### 2. Navigate into the project
 
 ```bash
 cd flask-todo-app
@@ -62,7 +68,7 @@ cd flask-todo-app
 ### 3. Create a virtual environment
 
 ```bash
-python -m venv env
+python -m venv venv
 ```
 
 ### 4. Activate the virtual environment
@@ -70,7 +76,7 @@ python -m venv env
 **Windows:**
 
 ```bash
-env\Scripts\activate
+venv\Scripts\activate
 ```
 
 ### 5. Install dependencies
@@ -85,55 +91,44 @@ pip install -r requirement.txt
 python app.py
 ```
 
-The application will be available at:
+Open your browser and visit:
 
 ```text
-http://127.0.0.1:5000
+http://127.0.0.1:5000/
 ```
 
-## 🔄 CRUD Operations
+## 🌐 Deployment
 
-| Operation | Description           |
-| --------- | --------------------- |
-| Create    | Add a new Todo        |
-| Read      | Display saved Todos   |
-| Update    | Edit an existing Todo |
-| Delete    | Remove a Todo         |
+This project is deployed using **Render** with Gunicorn.
 
-## 📚 What I Learned
+### Build Command
 
-Through this project, I learned:
+```bash
+pip install -r requirement.txt
+```
 
-* Flask routing
-* GET and POST requests
-* HTML forms and backend integration
-* `request.form`
-* Jinja2 templates
-* Dynamic routes
-* Flask-SQLAlchemy
-* Database CRUD operations
-* SQLite integration
-* Template rendering
-* Git and GitHub
-* Basic deployment preparation
+### Start Command
 
-## 🔮 Future Improvements
+```bash
+gunicorn app:app
+```
+
+## 📌 Future Improvements
 
 * User authentication and registration
-* Todo completion status
+* Todo categories
+* Task deadlines
+* Task completion status
 * Search and filtering
 * PostgreSQL database
-* REST API
-* Production deployment
-* Better validation and error handling
+* Better responsive UI
 
 ## 👨‍💻 Author
 
 **Jagat Prasanna Shaw**
 
-GitHub:
-https://github.com/jagat2024
+GitHub: [jagat2024](https://github.com/jagat2024)
 
 ---
 
-⭐ If you find this project useful, feel free to explore the repository.
+⭐ If you found this project useful, consider giving it a star!
